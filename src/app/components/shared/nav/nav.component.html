@@ -1,14 +1,29 @@
-<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4  border-bottom">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-        <app-header></app-header>
-    </a>
+  <a class="navbar-brand col-md-2" href="#">
+    <app-header></app-header>
+  </a>
 
-    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-      <a class="me-3 py-2 text-dark text-decoration-none" href="#">Sobre</a>
-      <a class="me-3 py-2 text-dark text-decoration-none" href="#">Produtos</a>
-      <a class="me-3 py-2 text-dark text-decoration-none" href="#">Suporte</a>
-    </nav>
-
-    <a class="btn btn-outline-primary" href="#">Sign up</a>
+  <div class="collapse navbar-collapse col-md-2" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Desativado</a>
+      </li>
+    </ul>
+    
+    <div class="input-group col-md-4">
+      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Botão</button>
+      </div>
+    </div>
   </div>
+</nav>
+
+

@@ -1,4 +1,6 @@
 export class Book {
-    name!: string;
-    url!: string;
+    livro!: string;
+    ano!: number;
+    detetive!: string;
+    estrutura!: string;
 }
