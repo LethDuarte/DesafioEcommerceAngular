@@ -1,7 +1,11 @@
-.col-md-4{
-    width: 400px;
+.input-group{
+    width: 500px;
 }
 
-.col-md-2{
-    margin-left: 5px;
+.ml{
+    margin-left: 25px;
+}
+
+.navbar-collapse{
+    justify-content: space-around;
 }
