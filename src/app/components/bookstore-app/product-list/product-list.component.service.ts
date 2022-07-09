@@ -1,21 +1,22 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { Observable } from "rxjs";
 
-import { Book } from "./model/book";
 
 @Injectable()
 
-export class BooksService{
-    private url = 'https://sheet.best/api/sheets/d0d4a9c4-4983-4209-8a02-066127d46be3';
+export class PokeService{
+    public pokemons: Observable<any>=[];
+    private url = 'https://pokeapi.co/api/v2/pokemon?limit=100&offset=200';
 
-    httpOptions = {
+    /*httpOptions = {
         Headers: new HttpHeaders({'content-type': 'application/json'})
-    }
+    }*/
 
-    constructor(private http:HttpClient) {}
+   constructor(private http:HttpClient) {}
 
-    getBook(){
-        return this.http.get(this.url);
+    getPoke(){
+        this.pokemons = this.http.get(url);
     }
 
 }
