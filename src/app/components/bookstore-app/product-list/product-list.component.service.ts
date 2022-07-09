@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { Observable, of } from "rxjs";
+import { Poke } from "./model/poke";
 
 
 @Injectable()
@@ -15,8 +16,12 @@ export class PokeService{
 
    constructor(private http:HttpClient) {}
 
-    getPoke(){
+    getPoke(): Observable<Poke>{
         this.pokemons = this.http.get(url);
     }
 
+}
+
+ngOnIninit(){
+    getPoke();
 }
