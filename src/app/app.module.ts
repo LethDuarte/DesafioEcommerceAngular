@@ -1,4 +1,5 @@
-import { BooksService } from './components/bookstore-app/product-list/product-list.component.service';
+import { ProductListComponent } from './components/bookstore-app/product-list/product-list.component';
+import { BookServiceService } from './bookstore-app/services/book-service.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,8 +10,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { BookstoreAppComponent } from './components/bookstore-app/bookstore-app.component';
 import { FiltersComponent } from './components/bookstore-app/filters/filters.component';
-import { ProductListComponent } from './components/bookstore-app/product-list/product-list.component';
-import { ProductItemComponent } from './components/bookstore-app/product-list/product-item/product-item.component';
+
+
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -22,14 +23,13 @@ import { HttpClientModule } from '@angular/common/http';
     BookstoreAppComponent,
     FiltersComponent,
     ProductListComponent,
-    ProductItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [BooksService],
+  providers: [BookServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

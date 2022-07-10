@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { Poke } from '../model/poke';
+import { Poke } from '../model/book';
 
 @Component({
   selector: 'app-product-item',
