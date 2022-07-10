@@ -1,0 +1,15 @@
+/*.card-group{
+    width: 600px;
+}
+
+.card{
+    border: 0px;
+}
+
+.card-body{
+    border: 5px black;
+}*/
+
+.border-success{
+    border-color: black;
+}

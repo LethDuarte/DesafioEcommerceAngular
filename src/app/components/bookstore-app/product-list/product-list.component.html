@@ -1,6 +1,14 @@
-<div class="row">
-    <div *ngFor="let book of books">
-        <p class="card-text">{{ book.titulo }}</p>
-        <p class="card-text"> {{ book.ano }}</p>
+<div class="card-group">
+    <div class="card border-0">
+      <div class="card-body border border-secondary mb-2 mt-2 rounded" *ngFor="let book of books">
+        <h5 class="card-title">{{ book.titulo }}</h5>
+        <p class="card-text"><small class="text-muted">{{ book.ano }}</small></p>
+        <p class="card-text">O principal detetive deste livro é {{ book.detetive }}.</p>
+
+        <div>
+            <button type="button" class="btn btn-secondary mr-5">Comprar</button>
+            <button type="button" class="btn btn-light">Detalhes</button>
+        </div>
+      </div>
     </div>
 </div>
